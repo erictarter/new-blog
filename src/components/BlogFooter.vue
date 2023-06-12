@@ -2,16 +2,16 @@
 </script>
 
 <template>
-  <div id="/" class="footer d-flex justify-content-between align-items-center mt-4 py-3 px-3 px-sm-5">
+  <div id="/" class="footer d-flex justify-content-between align-items-center mt-4 blog-container">
     <div>
       <p class="fs-5 text-center">© Eric Tarter</p>
     </div>
-    <div class="socials">
+    <div class="socials d-flex justify-content-between">
       <a target="_blank" href="https://github.com/erictarter">
-        <i class="lni lni-github fs-3 mx-3"></i>
+        <i class="lni lni-github fs-3 me-4"></i>
       </a>
       <a target="_blank" href="https://www.linkedin.com/in/eric-tarter-b2549a203/">
-        <i class="lni lni-linkedin-original fs-3 mx-3"></i>
+        <i class="lni lni-linkedin-original fs-3"></i>
       </a>
     </div>
   </div>

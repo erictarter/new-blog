@@ -1,7 +1,9 @@
 <script setup lang="ts">
+import BlogHeader from './BlogHeader.vue';
 </script>
 <template>
-  <div class="blog-main fs-2">
+  <div class="blog-main blog-container">
+    <BlogHeader />
   </div>
 </template>
 

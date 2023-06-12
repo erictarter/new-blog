@@ -1,12 +1,12 @@
 <script setup lang="ts">
-import BlogHeader from './components/BlogHeader.vue';
-import BlogMain from './components/BlogMain.vue'
+import BlogSelect from './components/BlogSelect.vue';
+import BlogOne from './components/BlogOne.vue'
 import BlogFooter from './components/BlogFooter.vue'
 </script>
 
 <template>
-  <BlogHeader />
-  <BlogMain />
+  <BlogSelect />
+  <BlogOne />
   <BlogFooter />
 </template>
 
