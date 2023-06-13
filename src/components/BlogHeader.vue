@@ -1,41 +1,57 @@
 <script setup lang="ts">
+  import Socials from './utilities/Socials.vue'
+
+  defineProps<{ title: string; date: string; readTime: string }>()
 </script>
 <template>
-  <div class="blog-header">
+  <div class="blog-header blog-container">
     <div class="profile d-flex justify-content-between align-items-center">
-        <div class="profile-avatar"></div>
-        <div class="profile-links">
-            <div class="socials">
-              <a target="_blank" href="https://github.com/erictarter">
-                <i class="lni lni-github fs-3 me-2"></i>
-              </a>
-              <a target="_blank" href="https://www.linkedin.com/in/eric-tarter-b2549a203/">
-                <i class="lni lni-linkedin-original fs-3"></i>
-              </a>
-            </div>
-            <button>
-                <a href="www.erictarter.com"></a>
-            </button>
-        </div>
+      <div class="profile-avatar"></div>
+      <div class="profile-links">
+        <Socials />
+        <button class="site-btn">
+          <!-- CREATE BRAND LOGO HERE -->
+          ET
+          <a href="www.erictarter.com"></a>
+        </button>
+      </div>
     </div>
-    <h1 class="blog-title"></h1>
-    <p class="date-written"></p>
-    <p class="read-time"></p>
+    <div class="blog-info d-flex flex-column align-items-start mt-5">
+      <h1 class="blog-title">{{ title }}</h1>
+      <p class="date-written mb-1 mt-2">{{ date }}</p>
+      <p class="read-time">{{ readTime }}</p>
+    </div>
   </div>
 </template>
 
-
 <style scoped lang="scss">
-    .profile-avatar {
-        width: 125px;
-        height: 125px;
-        border-radius: 50%;
-        border: 2px solid #42403f;
-    }
-    i {
-        color: #42403f;
-    }
-    i:hover {
-        box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-    }
+  .profile-avatar {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    border: 1px solid #42403f;
+  }
+
+  .site-btn {
+    border-radius: 6px;
+    color: #42403f;
+    background-color: mintcream;
+    width: 100%;
+    border: 2px solid #42403f;
+    transition: 0.2s ease all;
+  }
+
+  .site-btn:hover {
+    box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.4);
+    transition: 0.2s ease all;
+  }
+
+  .blog-title {
+    font-size: 36px;
+  }
+
+  .read-time {
+    color: #7e9292;
+    font-size: 14px;
+  }
 </style>

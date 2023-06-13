@@ -6,6 +6,6 @@
 <style scoped lang="scss">
   .blog-main {
     min-height: 300px;
-    background-color: yellow;
+    background-color: pink;
   }
 </style>
