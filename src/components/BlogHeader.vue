@@ -1,5 +1,6 @@
 <script setup lang="ts">
   import Socials from './utilities/Socials.vue'
+  import Divider from './utilities/Divider.vue'
 
   defineProps<{ title: string; date: string; readTime: string }>()
 </script>
@@ -21,6 +22,7 @@
       <p class="date-written mb-1 mt-2">{{ date }}</p>
       <p class="read-time">{{ readTime }}</p>
     </div>
+    <Divider />
   </div>
 </template>
 
@@ -29,7 +31,7 @@
     width: 75px;
     height: 75px;
     border-radius: 50%;
-    border: 1px solid #42403f;
+    background: url(../assets/personal-picture.jpg) no-repeat center/cover;
   }
 
   .site-btn {
