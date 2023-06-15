@@ -5,7 +5,7 @@
   defineProps<{ title: string; date: string; readTime: string }>()
 </script>
 <template>
-  <div class="blog-header blog-container">
+  <div class="blog-header blog-container w-100">
     <div class="profile d-flex justify-content-between align-items-center">
       <div class="profile-avatar"></div>
       <div class="profile-links">

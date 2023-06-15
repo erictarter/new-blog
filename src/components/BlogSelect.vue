@@ -1,4 +1,6 @@
 <script setup lang="ts">
+  defineProps<{ title: string }>()
+
   import { ref, defineEmits } from 'vue'
 
   const toggleBlog = ref('1')
@@ -26,6 +28,12 @@
       style="
         background-image: url('https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80');
       "></div>
+    <div
+      class="title d-flex align-items-center justify-content-center w-100 h-100">
+      <h1 class="fs-1 px-3 text-center">
+        {{ title }}
+      </h1>
+    </div>
     <div class="select-indicators d-flex justify-content-center w-100">
       <div
         @click="blogSwitchOne"
@@ -87,5 +95,13 @@
     width: 100%;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  .title {
+    z-index: 100;
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: white;
   }
 </style>

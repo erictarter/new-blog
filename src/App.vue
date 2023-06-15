@@ -1,9 +1,11 @@
 <template>
-  <BlogSelect @blog-switch="blogToggle" />
-  <BlogHeader :title="blogTitle" :date="blogDate" :readTime="readTime" />
-  <BlogOne v-if="blogSelect === '1'" />
-  <BlogTwo v-if="blogSelect === '2'" />
-  <BlogFooter />
+  <BlogSelect @blog-switch="blogToggle" :title="blogTitle" />
+  <div class="d-sm-flex flex-column align-items-center">
+    <BlogHeader :title="blogTitle" :date="blogDate" :readTime="readTime" />
+    <BlogOne v-if="blogSelect === '1'" />
+    <BlogTwo v-if="blogSelect === '2'" />
+    <BlogFooter />
+  </div>
 </template>
 
 <script setup lang="ts">

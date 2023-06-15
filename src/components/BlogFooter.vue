@@ -5,7 +5,7 @@
 <template>
   <div
     id="/"
-    class="footer d-flex justify-content-between align-items-center mt-4 blog-container">
+    class="footer w-100 d-flex justify-content-between align-items-center mt-4 blog-container">
     <div>
       <p class="fs-5 text-center">© Eric Tarter</p>
     </div>

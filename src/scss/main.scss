@@ -1,5 +1,12 @@
 .blog-container {
   padding: 1.5em 3.25em;
+  max-width: 1375px !important;
+}
+
+@media (max-width: 576px) {
+  .blog-container {
+    padding: 1.5em 1.25em;
+  }
 }
 
 .property-text {

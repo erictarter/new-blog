@@ -20,11 +20,13 @@
   }
 </script>
 <template>
+  <div class="top-snippet d-flex align-items-center justify-content-between">
+    <span class="mx-3">{{ lang }}</span>
+    <button class="copy-button mx-3" @click="copyCode">
+      <span><i class="lni lni-clipboard"></i></span> Copy Code
+    </button>
+  </div>
   <pre class="code-snippet">
-    <div class="top-snippet d-flex align-items-center justify-content-between">
-        <span class="mx-3">{{ lang }}</span>
-        <button class="copy-button mx-3" @click="copyCode"> <span><i class="lni lni-clipboard"></i></span> Copy Code</button>
-    </div>
       <code ref="codeElement" class="d-flex text-start fs-5 px-4 px-5">
         {{ code }}
       </code>
@@ -32,14 +34,14 @@
 </template>
 
 <style scoped lang="scss">
+  .top-snippet {
+    height: 50px;
+    background-color: #796c66 !important;
+    color: #f1f1f1;
+    width: 100%;
+  }
   .code-snippet {
     background-color: #f1f1f1;
-
-    .top-snippet {
-      height: 50px;
-      background-color: #796c66;
-      color: #f1f1f1;
-    }
   }
 
   .copy-button {
