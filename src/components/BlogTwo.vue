@@ -28,24 +28,27 @@
       </div>
       <h2 ref="part1">Smooth Scrolling React</h2>
       <p>
-        While not essential, smooth scrolling is a delightful feature to enhance
-        the user experience on web pages with internal links. This web page
-        utilizes smooth scrolling to provide a seamless navigation experience.
-        Traditionally, implementing smooth scrolling involves using jQuery,
-        which requires importing the jQuery plugin, setting up jQuery classes,
-        writing JavaScript functions for those classes, and applying them to
-        HTML links. While this approach works well, there is a simpler
+        While not essential,
+        <span class="highlight-text">smooth scrolling</span> is a delightful
+        feature to enhance the user experience on web pages with internal links.
+        This web page utilizes smooth scrolling to provide a seamless navigation
+        experience. Traditionally, implementing smooth scrolling involves using
+        jQuery, which requires importing the jQuery plugin, setting up jQuery
+        classes, writing JavaScript functions for those classes, and applying
+        them to HTML links. While this approach works well, there is a simpler
         alternative called react-scroll. React-scroll offers a straightforward
         solution without the need for jQuery, making the implementation process
         much simpler and more streamlined.
       </p>
       <p>
-        First, install react-scroll. Go to your terminal and run this command.
+        First, install <span class="highlight-text">react-scroll</span>. Go to
+        your terminal and run this command.
       </p>
       <CodeSnippet lang="" code="npm i -S react-scroll" />
       <p>
-        Next import the react-scroll package. Put the following code at the top
-        of the react JS file.
+        Next import the
+        <span class="highlight-text">react-scroll</span> package. Put the
+        following code at the top of the react JS file.
       </p>
       <CodeSnippet
         lang="js"
@@ -129,7 +132,7 @@ place-items: center; <====
             ? 'example d-flex align-items-center justify-content-center mt-3'
             : 'example d-flex mt-3'
         ">
-        <span>!!! CENTER ME !!!</span>
+        <span style="color: ">!!! CENTER ME !!!</span>
       </div>
       <p>
         If the 'flex-direction' property is set to 'column', the centering
@@ -151,7 +154,7 @@ place-items: center; <====
   }
   button {
     border-radius: 4px;
-    background-color: #829f9e;
+    background-color: #88b59f;
     border: none;
     padding: 4px 10px;
     color: #fff;
@@ -162,8 +165,8 @@ place-items: center; <====
     padding: 2em;
 
     span {
-      background-color: pink;
-      color: white;
+      background-color: #e4b4ef;
+      color: #282828;
       padding: 4px;
       border-radius: 8px;
     }

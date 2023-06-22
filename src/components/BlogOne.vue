@@ -26,9 +26,10 @@
         <span @click="scrollPart3" class="mx-1">Options/Features</span>
       </div>
       <p>
-        Creating the Piano Project using Tone.js, a web audio framework, was an
-        enjoyable and straightforward experience. This application serves as an
-        educational tool, providing users with a solid foundation in piano
+        Creating the Piano Project using
+        <span class="highlight-text">Tone.js</span>, a web audio framework, was
+        an enjoyable and straightforward experience. This application serves as
+        an educational tool, providing users with a solid foundation in piano
         fundamentals. It offers the ability to visualize and listen to major
         scales and chords. Simply clicking on any note produces its
         corresponding sound. Additionally, users can play notes and chords using
@@ -76,8 +77,9 @@
         }" />
       <h2 ref="part2">Triggering Piano Sounds</h2>
       <p>
-        First let's bring in the Tone JS framework. To do this, go into your
-        terminal and use this command.
+        First let's bring in the
+        <span class="highlight-text">Tone JS</span> framework. To do this, go
+        into your terminal and use this command.
       </p>
       <CodeSnippet lang="" code="npm install tone" />
       <p>
@@ -95,7 +97,8 @@
       </p>
       <CodeSnippet lang="js" code='piano.triggerAttackRelease("C3", "8n");' />
       <p>
-        In this app, there are four ways to trigger the Tone JS to make a sound.
+        In this app, there are four ways to trigger the
+        <span class="highlight-text">Tone JS</span> to make a sound.
       </p>
       <ol>
         <li>Clicking on notes.</li>
@@ -105,11 +108,12 @@
       </ol>
       <p>
         To enable sound when clicking on notes, we can follow these steps.
-        Firstly, we need to select all the white notes in the DOM. We can
-        achieve this by using the querySelectorAll method, which returns a node
-        list containing all the matching elements. Next, we can iterate through
-        the node list using the forEach method to perform actions on each white
-        note. Similarly, we can target the black notes using the same approach.
+        Firstly, we need to select all the white notes in the
+        <span class="highlight-text">DOM</span>. We can achieve this by using
+        the querySelectorAll method, which returns a node list containing all
+        the matching elements. Next, we can iterate through the node list using
+        the forEach method to perform actions on each white note. Similarly, we
+        can target the black notes using the same approach.
       </p>
       <CodeSnippet
         lang="js"

@@ -27,7 +27,7 @@
     </button>
   </div>
   <pre class="code-snippet">
-      <code ref="codeElement" class="d-flex text-start fs-5 px-4 px-5">
+      <code ref="codeElement" class="d-flex text-start fs-5 px-4 px-sm-5">
         {{ code }}
       </code>
     </pre>
@@ -36,8 +36,8 @@
 <style scoped lang="scss">
   .top-snippet {
     height: 50px;
-    background-color: #796c66 !important;
-    color: #f1f1f1;
+    background-color: #e4b4ef !important;
+    color: #282828;
     width: 100%;
   }
   .code-snippet {
@@ -47,8 +47,8 @@
   .copy-button {
     cursor: pointer;
     border: none;
-    background-color: #796c66;
-    color: #f1f1f1;
+    background-color: #e4b4ef;
+    color: #282828;
   }
 
   pre {
