@@ -3,12 +3,12 @@
 <template>
   <div class="socials d-flex justify-content-between">
     <a class="text-center" target="_blank" href="https://github.com/erictarter">
-      <i class="lni lni-github fs-3"></i>
+      <i class="lni lni-github fs-2"></i>
     </a>
     <a
       target="_blank"
       href="https://www.linkedin.com/in/eric-tarter-b2549a203/">
-      <i class="lni lni-linkedin-original fs-3"></i>
+      <i class="lni lni-linkedin-original fs-2"></i>
     </a>
   </div>
 </template>

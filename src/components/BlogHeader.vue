@@ -8,11 +8,9 @@
   <div class="blog-header blog-container w-100">
     <div class="profile d-flex justify-content-between align-items-center">
       <div class="profile-avatar"></div>
-      <div class="profile-links">
+      <div class="profile-links d-flex align-items-center">
         <Socials />
         <button class="site-btn">
-          <!-- CREATE BRAND LOGO HERE -->
-          ET
           <a href="www.erictarter.com"></a>
         </button>
       </div>
@@ -36,11 +34,14 @@
 
   .site-btn {
     border-radius: 6px;
-    color: #42403f;
-    background-color: mintcream;
-    width: 100%;
-    border: 2px solid #42403f;
+    width: 50px;
+    height: 50px;
     transition: 0.2s ease all;
+    background-image: url('../assets/logo.png');
+    background-size: cover;
+    background-position: center center;
+    border: none;
+    background-color: transparent;
   }
 
   .site-btn:hover {
