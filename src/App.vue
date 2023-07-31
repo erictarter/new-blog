@@ -2,7 +2,8 @@
   <BlogSelect @blog-switch="blogToggle" :title="blogTitle" />
   <div class="d-sm-flex flex-column align-items-center">
     <BlogHeader :title="blogTitle" :date="blogDate" :readTime="readTime" />
-    <BlogOne v-if="blogSelect === '1'" />
+    <!-- <PianoBlog v-if="blogSelect === '1'" /> -->
+    <NodeExpressBlog v-if="blogSelect === '1'" />
     <BlogTwo v-if="blogSelect === '2'" />
     <BlogFooter />
   </div>
@@ -10,27 +11,28 @@
 
 <script setup lang="ts">
   import BlogSelect from './components/BlogSelect.vue'
-  import BlogOne from './components/BlogOne.vue'
+  // import PianoBlog from './components/PianoBlog.vue'
+  import NodeExpressBlog from './components/NodeExpressBlog.vue'
   import BlogTwo from './components/BlogTwo.vue'
   import BlogFooter from './components/BlogFooter.vue'
   import BlogHeader from './components/BlogHeader.vue'
   import { ref } from 'vue'
 
   const blogSelect = ref('1')
-  const blogTitle = ref('Piano App w/Tone JS')
-  const blogDate = ref('November 21, 2020')
-  const readTime = ref('Read Time 5 minutes')
+  const blogTitle = ref('Node JS Express for Beginners')
+  const blogDate = ref('July 14, 2023')
+  const readTime = ref('Read Time 4 minutes')
 
   function blogToggle(value: any) {
     blogSelect.value = value
     if (value === '1') {
-      blogTitle.value = 'Piano App w/Tone JS'
-      blogDate.value = 'November 21, 2020'
-      readTime.value = 'Read Time 5 minutes'
+      blogTitle.value = 'Node JS Express for Beginners'
+      blogDate.value = 'July 14, 2023'
+      readTime.value = 'Read Time 4 minutes'
     } else {
       blogTitle.value = 'Simple Tips & Tools'
       blogDate.value = 'November 27, 2020'
-      readTime.value = 'Read Time 2 minutes'
+      readTime.value = 'Read Time 3 minutes'
     }
   }
 </script>

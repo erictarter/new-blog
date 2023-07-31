@@ -2,6 +2,7 @@
   import { ref } from 'vue'
   import BlogImage from './utilities/BlogImage.vue'
   import CodeSnippet from './utilities/CodeSnippet.vue'
+  import Credit from './Credit.vue';
 
   const toggleExample = ref(false)
 
@@ -144,6 +145,7 @@ place-items: center; <====
         flex direction.
       </p>
     </div>
+    <Credit />
   </div>
 </template>
 
